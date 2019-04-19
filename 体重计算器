@@ -1,0 +1,21 @@
+#- * - 编码：utf-8 - * -
+name=input('请输入您的名字：')
+print('你好',name)
+height=float(input('请输入你的身高：（单位：米）'))
+print('你的身高是：{}m'.format(height))
+weight=float(input('请输入你的体重：（单位：千克）'))
+print('你的体重是：{}Kg'.format(weight))
+#type('height','weight')
+BMI=float(weight/(height**2))
+print('BMI的值是：{:.2f}'.format(BMI))
+
+if 18.5<BMI < 25:
+    print('你的体重正常，继续保持哦')
+elif 25 < BMI < 28:
+    print('体重过重啦，需要注意哦')
+elif 28 < BMI < 32:
+    print('体重已经超标，不减20斤不能换头像')
+elif BMI> 32:
+    print('过于肥胖，等死吧')
+else:
+    print('体重过轻，加油吃啊老弟')
